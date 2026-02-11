@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMICA - Pełne Logo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #050505;
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 3rem;
+            color: #ff0033;
+            text-shadow: 0 0 30px rgba(255, 0, 51, 0.6);
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #b3b3b3;
+            font-size: 1.2rem;
+        }
+        
+        .logo-showcase {
+            display: grid;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .logo-variant {
+            background: #111111;
+            border-radius: 25px;
+            padding: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .logo-variant:hover {
+            border-color: #ff0033;
+            box-shadow: 0 0 40px rgba(255, 0, 51, 0.3);
+        }
+        
+        .variant-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ff0033;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .variant-description {
+            color: #b3b3b3;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .logo-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+            background: #050505;
+            border-radius: 20px;
+            padding: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .color-variants {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .color-box {
+            background: #050505;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .color-box:hover {
+            border-color: #ff0033;
+            transform: translateY(-5px);
+        }
+        
+        .color-label {
+            color: #b3b3b3;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .download-section {
+            background: #111111;
+            padding: 50px;
+            border-radius: 25px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .spec-box {
+            background: #050505;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .spec-title {
+            color: #ff0033;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .spec-value {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-display {
+                padding: 30px;
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DYNAMICA</h1>
+        <p class="subtitle">Pełne logo w stylu neonowego minimalizmu</p>
+        
+        <div class="logo-showcase">
+            <!-- WARIANT 1: Poziomy z pełną nazwą -->
+            <div class="logo-variant">
+                <h2 class="variant-title">Wersja Główna - Pozioma</h2>
+                <p class="variant-description">
+                    Pełne logo z sygneterem po lewej stronie i nazwą firmy. 
+                    Idealne do nagłówka strony, wizytówek i materiałów promocyjnych.
+                    Efekt neonowego blasku nadaje nowoczesny, profesjonalny charakter.
+                </p>
+                <div class="logo-display">
+                    <svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Efekt neonowego blasku -->
+                            <filter id="glow1">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                            
+                            <filter id="textGlow">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Sygnet D -->
+                        <g transform="translate(100, 100)">
+                            <!-- Zewnętrzny kontur -->
+                            <path d="M -40 -50 L -40 50 L 15 50 Q 50 50 50 0 Q 50 -50 15 -50 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="5" filter="url(#glow1)">
+                                <animate attributeName="stroke-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <!-- Wewnętrzny kontur -->
+                            <path d="M -30 -38 L -30 38 L 12 38 Q 38 38 38 0 Q 38 -38 12 -38 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="2.5" opacity="0.7"/>
+                            
+                            <!-- Środkowa linia akcentująca -->
+                            <line x1="-25" y1="0" x2="25" y2="0" stroke="#ff0033" stroke-width="1.5" opacity="0.4"/>
+                            
+                            <!-- Akcent kropka -->
+                            <circle cx="45" cy="-42" r="4" fill="#ff0033" filter="url(#glow1)">
+                                <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </g>
+                        
+                        <!-- Linia oddzielająca -->
+                        <line x1="180" y1="70" x2="180" y2="130" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                        
+                        <!-- Nazwa DYNAMICA -->
+                        <text x="220" y="85" font-family="Arial, sans-serif" font-size="52" font-weight="900" 
+                              fill="#ffffff" letter-spacing="4" filter="url(#textGlow)">
+                            DYNAMICA
+                        </text>
+                        
+                        <!-- Podtytuł -->
+                        <text x="220" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="400" 
+                              fill="#ff0033" letter-spacing="3" opacity="0.9">
+                            WYKOŃCZENIA WNĘTRZ
+                        </text>
+                        
+                        <!-- Akcent pod tekstem -->
+                        <rect x="220" y="128" width="120" height="2" fill="#ff0033" opacity="0.5">
+                            <animate attributeName="width" values="120;140;120" dur="3s" repeatCount="indefinite"/>
+                        </rect>
+                    </svg>
+                </div>
+                
+                <div class="color-variants">
+                    <div class="color-box">
+                        <span class="color-label">Ciemne tło</span>
+                        <svg width="200" height="80" viewBox="0 0 600 200">
+                            <rect width="600" height="200" fill="#050505"/>
+                            <g transform="translate(100, 100)">
+                                <path d="M -40 -50 L -40 50 L 15 50 Q 50 50 50 0 Q 50 -50 15 -50 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="5"/>
+                                <path d="M -30 -38 L -30 38 L 12 38 Q 38 38 38 0 Q 38 -38 12 -38 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="2.5" opacity="0.7"/>
+                                <circle cx="45" cy="-42" r="4" fill="#ff0033"/>
+                            </g>
+                            <line x1="180" y1="70" x2="180" y2="130" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                            <text x="220" y="85" font-family="Arial, sans-serif" font-size="52" font-weight="900" 
+                                  fill="#ffffff" letter-spacing="4">DYNAMICA</text>
+                            <text x="220" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="400" 
+                                  fill="#ff0033" letter-spacing="3" opacity="0.9">WYKOŃCZENIA WNĘTRZ</text>
+                        </svg>
+                    </div>
+                    
+                    <div class="color-box">
+                        <span class="color-label">Jasne tło</span>
+                        <svg width="200" height="80" viewBox="0 0 600 200">
+                            <rect width="600" height="200" fill="#ffffff"/>
+                            <g transform="translate(100, 100)">
+                                <path d="M -40 -50 L -40 50 L 15 50 Q 50 50 50 0 Q 50 -50 15 -50 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="5"/>
+                                <path d="M -30 -38 L -30 38 L 12 38 Q 38 38 38 0 Q 38 -38 12 -38 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="2.5" opacity="0.7"/>
+                                <circle cx="45" cy="-42" r="4" fill="#ff0033"/>
+                            </g>
+                            <line x1="180" y1="70" x2="180" y2="130" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                            <text x="220" y="85" font-family="Arial, sans-serif" font-size="52" font-weight="900" 
+                                  fill="#050505" letter-spacing="4">DYNAMICA</text>
+                            <text x="220" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="400" 
+                                  fill="#ff0033" letter-spacing="3" opacity="0.9">WYKOŃCZENIA WNĘTRZ</text>
+                        </svg>
+                    </div>
+                    
+                    <div class="color-box">
+                        <span class="color-label">Monochrom</span>
+                        <svg width="200" height="80" viewBox="0 0 600 200">
+                            <rect width="600" height="200" fill="#050505"/>
+                            <g transform="translate(100, 100)">
+                                <path d="M -40 -50 L -40 50 L 15 50 Q 50 50 50 0 Q 50 -50 15 -50 Z" 
+                                      fill="none" stroke="#ffffff" stroke-width="5"/>
+                                <path d="M -30 -38 L -30 38 L 12 38 Q 38 38 38 0 Q 38 -38 12 -38 Z" 
+                                      fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.7"/>
+                                <circle cx="45" cy="-42" r="4" fill="#ffffff"/>
+                            </g>
+                            <line x1="180" y1="70" x2="180" y2="130" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+                            <text x="220" y="85" font-family="Arial, sans-serif" font-size="52" font-weight="900" 
+                                  fill="#ffffff" letter-spacing="4">DYNAMICA</text>
+                            <text x="220" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="400" 
+                                  fill="#ffffff" letter-spacing="3" opacity="0.6">WYKOŃCZENIA WNĘTRZ</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WARIANT 2: Pionowy -->
+            <div class="logo-variant">
+                <h2 class="variant-title">Wersja Pionowa</h2>
+                <p class="variant-description">
+                    Kompaktowa wersja pionowa idealna do social media, profili, stopek i wąskich przestrzeni.
+                    Zachowuje wszystkie kluczowe elementy identyfikacji wizualnej.
+                </p>
+                <div class="logo-display">
+                    <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="glow2">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Sygnet D (większy) -->
+                        <g transform="translate(200, 140)">
+                            <path d="M -50 -60 L -50 60 L 20 60 Q 60 60 60 0 Q 60 -60 20 -60 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="6" filter="url(#glow2)">
+                                <animate attributeName="stroke-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <path d="M -38 -45 L -38 45 L 15 45 Q 45 45 45 0 Q 45 -45 15 -45 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="3" opacity="0.7"/>
+                            
+                            <line x1="-30" y1="0" x2="30" y2="0" stroke="#ff0033" stroke-width="2" opacity="0.4"/>
+                            
+                            <circle cx="52" cy="-52" r="5" fill="#ff0033" filter="url(#glow2)">
+                                <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </g>
+                        
+                        <!-- Linia oddzielająca -->
+                        <line x1="120" y1="230" x2="280" y2="230" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                        
+                        <!-- Nazwa -->
+                        <text x="200" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="900" 
+                              fill="#ffffff" letter-spacing="6" text-anchor="middle">
+                            DYNAMICA
+                        </text>
+                        
+                        <!-- Podtytuł -->
+                        <text x="200" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="400" 
+                              fill="#ff0033" letter-spacing="4" opacity="0.9" text-anchor="middle">
+                            WYKOŃCZENIA WNĘTRZ
+                        </text>
+                        
+                        <!-- Akcent -->
+                        <rect x="150" y="323" width="100" height="2" fill="#ff0033" opacity="0.5">
+                            <animate attributeName="width" values="100;120;100" dur="3s" repeatCount="indefinite"/>
+                        </rect>
+                    </svg>
+                </div>
+                
+                <div class="color-variants">
+                    <div class="color-box">
+                        <span class="color-label">Ciemne tło</span>
+                        <svg width="150" height="150" viewBox="0 0 400 400">
+                            <rect width="400" height="400" fill="#050505"/>
+                            <g transform="translate(200, 140)">
+                                <path d="M -50 -60 L -50 60 L 20 60 Q 60 60 60 0 Q 60 -60 20 -60 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="6"/>
+                                <path d="M -38 -45 L -38 45 L 15 45 Q 45 45 45 0 Q 45 -45 15 -45 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="3" opacity="0.7"/>
+                                <circle cx="52" cy="-52" r="5" fill="#ff0033"/>
+                            </g>
+                            <line x1="120" y1="230" x2="280" y2="230" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                            <text x="200" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="900" 
+                                  fill="#ffffff" letter-spacing="6" text-anchor="middle">DYNAMICA</text>
+                            <text x="200" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="400" 
+                                  fill="#ff0033" letter-spacing="4" opacity="0.9" text-anchor="middle">WYKOŃCZENIA WNĘTRZ</text>
+                        </svg>
+                    </div>
+                    
+                    <div class="color-box">
+                        <span class="color-label">Jasne tło</span>
+                        <svg width="150" height="150" viewBox="0 0 400 400">
+                            <rect width="400" height="400" fill="#ffffff"/>
+                            <g transform="translate(200, 140)">
+                                <path d="M -50 -60 L -50 60 L 20 60 Q 60 60 60 0 Q 60 -60 20 -60 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="6"/>
+                                <path d="M -38 -45 L -38 45 L 15 45 Q 45 45 45 0 Q 45 -45 15 -45 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="3" opacity="0.7"/>
+                                <circle cx="52" cy="-52" r="5" fill="#ff0033"/>
+                            </g>
+                            <line x1="120" y1="230" x2="280" y2="230" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                            <text x="200" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="900" 
+                                  fill="#050505" letter-spacing="6" text-anchor="middle">DYNAMICA</text>
+                            <text x="200" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="400" 
+                                  fill="#ff0033" letter-spacing="4" opacity="0.9" text-anchor="middle">WYKOŃCZENIA WNĘTRZ</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WARIANT 3: Tylko sygnet -->
+            <div class="logo-variant">
+                <h2 class="variant-title">Sygnet Samodzielny</h2>
+                <p class="variant-description">
+                    Czysty sygnet bez tekstu - idealny do favicon, ikon aplikacji, watermarków i małych przestrzeni.
+                    Rozpoznawalny znak firmowy który działa w każdym rozmiarze.
+                </p>
+                <div class="logo-display">
+                    <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="glow3">
+                                <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <g transform="translate(150, 150)">
+                            <!-- Zewnętrzny kontur -->
+                            <path d="M -70 -85 L -70 85 L 25 85 Q 85 85 85 0 Q 85 -85 25 -85 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="8" filter="url(#glow3)">
+                                <animate attributeName="stroke-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <!-- Wewnętrzny kontur -->
+                            <path d="M -52 -65 L -52 65 L 20 65 Q 65 65 65 0 Q 65 -65 20 -65 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="4" opacity="0.7"/>
+                            
+                            <!-- Środkowa linia -->
+                            <line x1="-45" y1="0" x2="45" y2="0" stroke="#ff0033" stroke-width="3" opacity="0.4"/>
+                            
+                            <!-- Akcent kropka -->
+                            <circle cx="75" cy="-75" r="7" fill="#ff0033" filter="url(#glow3)">
+                                <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            
+                            <!-- Dodatkowe elementy geometryczne -->
+                            <circle cx="-70" cy="-85" r="3" fill="#ff0033" opacity="0.6"/>
+                            <circle cx="-70" cy="85" r="3" fill="#ff0033" opacity="0.6"/>
+                        </g>
+                    </svg>
+                </div>
+                
+                <div class="color-variants">
+                    <div class="color-box">
+                        <span class="color-label">Czerwony</span>
+                        <svg width="120" height="120" viewBox="0 0 300 300">
+                            <rect width="300" height="300" fill="#050505"/>
+                            <g transform="translate(150, 150)">
+                                <path d="M -70 -85 L -70 85 L 25 85 Q 85 85 85 0 Q 85 -85 25 -85 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="8"/>
+                                <path d="M -52 -65 L -52 65 L 20 65 Q 65 65 65 0 Q 65 -65 20 -65 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="4" opacity="0.7"/>
+                                <line x1="-45" y1="0" x2="45" y2="0" stroke="#ff0033" stroke-width="3" opacity="0.4"/>
+                                <circle cx="75" cy="-75" r="7" fill="#ff0033"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <div class="color-box">
+                        <span class="color-label">Biały</span>
+                        <svg width="120" height="120" viewBox="0 0 300 300">
+                            <rect width="300" height="300" fill="#050505"/>
+                            <g transform="translate(150, 150)">
+                                <path d="M -70 -85 L -70 85 L 25 85 Q 85 85 85 0 Q 85 -85 25 -85 Z" 
+                                      fill="none" stroke="#ffffff" stroke-width="8"/>
+                                <path d="M -52 -65 L -52 65 L 20 65 Q 65 65 65 0 Q 65 -65 20 -65 Z" 
+                                      fill="none" stroke="#ffffff" stroke-width="4" opacity="0.7"/>
+                                <line x1="-45" y1="0" x2="45" y2="0" stroke="#ffffff" stroke-width="3" opacity="0.4"/>
+                                <circle cx="75" cy="-75" r="7" fill="#ffffff"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <div class="color-box">
+                        <span class="color-label">Wypełniony</span>
+                        <svg width="120" height="120" viewBox="0 0 300 300">
+                            <rect width="300" height="300" fill="#050505"/>
+                            <g transform="translate(150, 150)">
+                                <path d="M -70 -85 L -70 85 L 25 85 Q 85 85 85 0 Q 85 -85 25 -85 Z" 
+                                      fill="#ff0033" opacity="0.9"/>
+                                <path d="M -52 -65 L -52 65 L 20 65 Q 65 65 65 0 Q 65 -65 20 -65 Z" 
+                                      fill="#050505"/>
+                                <circle cx="75" cy="-75" r="7" fill="#ff0033"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <div class="color-box">
+                        <span class="color-label">Favicon 32x32</span>
+                        <svg width="32" height="32" viewBox="0 0 300 300">
+                            <rect width="300" height="300" fill="#050505"/>
+                            <g transform="translate(150, 150)">
+                                <path d="M -70 -85 L -70 85 L 25 85 Q 85 85 85 0 Q 85 -85 25 -85 Z" 
+                                      fill="none" stroke="#ff0033" stroke-width="12"/>
+                                <circle cx="75" cy="-75" r="10" fill="#ff0033"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WARIANT 4: Rozszerzone z tagline -->
+            <div class="logo-variant">
+                <h2 class="variant-title">Wersja Rozszerzona z Tagline</h2>
+                <p class="variant-description">
+                    Pełna wersja brandingowa z dodatkowymi informacjami.
+                    Idealna do prezentacji, ofert handlowych i materiałów marketingowych.
+                </p>
+                <div class="logo-display">
+                    <svg width="700" height="250" viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="glow4">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Sygnet -->
+                        <g transform="translate(110, 125)">
+                            <path d="M -45 -55 L -45 55 L 18 55 Q 55 55 55 0 Q 55 -55 18 -55 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="5.5" filter="url(#glow4)"/>
+                            <path d="M -33 -42 L -33 42 L 14 42 Q 42 42 42 0 Q 42 -42 14 -42 Z" 
+                                  fill="none" stroke="#ff0033" stroke-width="2.8" opacity="0.7"/>
+                            <line x1="-28" y1="0" x2="28" y2="0" stroke="#ff0033" stroke-width="1.8" opacity="0.4"/>
+                            <circle cx="48" cy="-47" r="4.5" fill="#ff0033" filter="url(#glow4)"/>
+                        </g>
+                        
+                        <line x1="200" y1="85" x2="200" y2="165" stroke="#ff0033" stroke-width="2" opacity="0.3"/>
+                        
+                        <!-- Główny tekst -->
+                        <text x="240" y="105" font-family="Arial, sans-serif" font-size="58" font-weight="900" 
+                              fill="#ffffff" letter-spacing="5">
+                            DYNAMICA
+                        </text>
+                        
+                        <!-- Podtytuł -->
+                        <text x="240" y="145" font-family="Arial, sans-serif" font-size="18" font-weight="600" 
+                              fill="#ff0033" letter-spacing="3.5" opacity="0.95">
+                            WYKOŃCZENIA WNĘTRZ
+                        </text>
+                        
+                        <!-- Linia pod podtytułem -->
+                        <rect x="240" y="153" width="280" height="1.5" fill="#ff0033" opacity="0.4"/>
+                        
+                        <!-- Tagline -->
+                        <text x="240" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="400" 
+                              fill="#b3b3b3" letter-spacing="2">
+                            Profesjonalizm • Precyzja • Pasja
+                        </text>
+                        
+                        <!-- Lokalizacja -->
+                        <g transform="translate(240, 200)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff0033" stroke-width="2">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <text x="25" y="13" font-family="Arial, sans-serif" font-size="13" fill="#b3b3b3" letter-spacing="1">
+                                Nowy Sącz / Gorlice / Gródek
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja specyfikacji -->
+        <div class="download-section">
+            <h2 style="color: #ff0033; font-size: 2rem; margin-bottom: 30px;">Specyfikacja Techniczna</h2>
+            
+            <div class="specs-grid">
+                <div class="spec-box">
+                    <div class="spec-title">Główny Kolor</div>
+                    <div class="spec-value">#FF0033</div>
+                    <p style="color: #b3b3b3; margin-top: 10px; font-size: 0.9rem;">Neonowa czerwień</p>
+                </div>
+                
+                <div class="spec-box">
+                    <div class="spec-title">Tło Ciemne</div>
+                    <div class="spec-value">#050505</div>
+                    <p style="color: #b3b3b3; margin-top: 10px; font-size: 0.9rem;">Deep black</p>
+                </div>
+                
+                <div class="spec-box">
+                    <div class="spec-title">Format</div>
+                    <div class="spec-value">SVG</div>
+                    <p style="color: #b3b3b3; margin-top: 10px; font-size: 0.9rem;">Skalowalne wektory</p>
+                </div>
+                
+                <div class="spec-box">
+                    <div class="spec-title">Krój Pisma</div>
+                    <div class="spec-value">Arial Black</div>
+                    <p style="color: #b3b3b3; margin-top: 10px; font-size: 0.9rem;">Font bezpieczny</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px; padding: 30px; background: #050505; border-radius: 15px;">
+                <h3 style="color: #ff0033; margin-bottom: 20px; font-size: 1.5rem;">Zastosowania Logo</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: left;">
+                    <div>
+                        <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">✓ Wersja Pozioma:</p>
+                        <p style="color: #b3b3b3; font-size: 0.9rem;">Nagłówek strony, wizytówki, billboardy</p>
+                    </div>
+                    <div>
+                        <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">✓ Wersja Pionowa:</p>
+                        <p style="color: #b3b3b3; font-size: 0.9rem;">Social media, profile, ulotki</p>
+                    </div>
+                    <div>
+                        <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">✓ Tylko Sygnet:</p>
+                        <p style="color: #b3b3b3; font-size: 0.9rem;">Favicon, ikony app, watermarki</p>
+                    </div>
+                    <div>
+                        <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">✓ Rozszerzona:</p>
+                        <p style="color: #b3b3b3; font-size: 0.9rem;">Prezentacje, oferty, raporty</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3 style="color: #ff0033; margin-bottom: 15px; font-size: 1.3rem;">Efekty Specjalne</h3>
+                <p style="color: #b3b3b3; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+                    Logo zawiera animowane efekty neonowego blasku (pulsacja), które można włączyć na stronie internetowej 
+                    dla zwiększenia dynamiki. Wszystkie animacje są subtelne i nie rozpraszają uwagi. 
+                    W materiałach drukowanych użyj wersji statycznej bez animacji.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
