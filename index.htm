@@ -295,8 +295,8 @@
             letter-spacing: -2px;
             position: relative;
             display: inline-block;
-            opacity: 0;
-            animation: heroFadeIn 1s ease-out 0.2s forwards;
+            clip-path: inset(0 100% 0 0);
+            animation: revealWipe 0.9s cubic-bezier(0.77, 0, 0.18, 1) 0.2s forwards;
         }
 
         .hero h2 {
@@ -306,21 +306,30 @@
             letter-spacing: 4px;
             margin-bottom: 30px;
             text-shadow: 0 0 15px var(--primary-glow);
-            opacity: 0;
-            animation: heroFadeIn 1s ease-out 0.5s forwards;
+            clip-path: inset(0 100% 0 0);
+            animation: revealWipe 0.9s cubic-bezier(0.77, 0, 0.18, 1) 0.55s forwards;
         }
 
         .hero p {
             font-size: 1.2rem;
             color: var(--text-gray);
             margin-bottom: 50px;
-            opacity: 0;
-            animation: heroFadeIn 1s ease-out 0.8s forwards;
+            clip-path: inset(0 100% 0 0);
+            animation: revealWipe 0.9s cubic-bezier(0.77, 0, 0.18, 1) 0.9s forwards;
         }
 
         .hero-buttons {
-            opacity: 0;
-            animation: heroFadeIn 1s ease-out 1.1s forwards;
+            clip-path: inset(0 100% 0 0);
+            animation: revealWipe 0.9s cubic-bezier(0.77, 0, 0.18, 1) 1.2s forwards;
+        }
+
+        @keyframes revealWipe {
+            from {
+                clip-path: inset(0 100% 0 0);
+            }
+            to {
+                clip-path: inset(0 0% 0 0);
+            }
         }
 
         @keyframes heroFadeIn {
